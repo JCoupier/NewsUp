@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/news_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thumbnail_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/news_placeholder"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/news_section"
+        style="@style/NewsSectionNameStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Section Name" />
+
+    <TextView
+        android:id="@+id/news_title"
+        style="@style/NewsTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="News title" />
+
+    <TextView
+        android:id="@+id/read_more"
+        style="@style/ReadMoreStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/read_more" />
+
+</LinearLayout>
+
